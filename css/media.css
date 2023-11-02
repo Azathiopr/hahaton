@@ -1,0 +1,899 @@
+@media(max-width: 425px) {
+    .container {
+        width: 315px;
+        margin: 0 55px;
+    }
+
+    .header_top {
+        display: none;
+    }
+
+    .header_bottom {
+        background: url("../images/blur\ bg.png")center / cover no-repeat;
+        width: 425px;
+        height: 280px;
+    }
+
+    /* burger_menu */
+
+    .burger_menu {
+        visibility: visible;
+    }
+
+    #toggle {
+        opacity: 0;
+    }
+
+    .btn_btn img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .btn_btn {
+        position: fixed;
+        top: 10px;
+        left: 180px;
+        z-index: 10;
+    }
+
+    .menu_menu {
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        /* чтобы скрыть */
+        visibility: hidden;
+        top: -100;
+        width: 425px;
+        height: 80px;
+        /*  */
+        list-style: none;
+        background-color: rgb(0, 0, 0);
+        transition: 0.5s;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .menu_item_item {
+        display: block;
+        /* padding: 15px 0; */
+        color: rgb(255, 255, 255);
+        font-family: 'Lumberjack';
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 400;
+        text-align: center;
+        text-decoration: none;
+        /* border-radius: 5px; */
+        transition: 0.5s;
+        left: 27.5;
+        width: 212.5px;
+        margin: 10px 0;
+    }
+
+
+    #toggle:checked~.menu_menu {
+        visibility: visible;
+        top: 0;
+    }
+
+    /*  */
+
+    .header_left {
+        backdrop-filter: blur(0px);
+        width: 425px;
+        height: 280px;
+    }
+
+    h1 {
+        width: 385px;
+        font-family: 'Lumberjack';
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 42.48px;
+        text-align: center;
+        -webkit-text-stroke: 1.08px #FFFFFF;
+        color: #f31f74;
+        text-shadow:
+            0 0 5px#ff26c2,
+            0 0 15px #fc37ff,
+            0 0 20px #fc37ff,
+            0 0 25px #ffffff;
+    }
+
+    .neon {
+        position: absolute;
+        z-index: 1;
+        top: 90px;
+        left: 20px;
+        -webkit-text-stroke: 2.16px #FFFFFF;
+        text-shadow:
+            0 0 5px#ff26c2,
+            0 0 15px #fc37ff,
+            0 0 20px #fc37ff,
+            0 0 25px #ffffff;
+    }
+
+    .neon_colifornia {
+        position: absolute;
+        z-index: -1;
+        top: 90px;
+        left: 20px;
+
+        -webkit-text-stroke: 3.24px #FB37FF;
+        text-shadow:
+            0 0 5px#ff26c2,
+            0 0 15px #fc37ff,
+            0 0 20px #fc37ff,
+            0 0 25px #ffffff;
+    }
+
+    .neon_bar {
+        position: absolute;
+        z-index: -5;
+        top: 90px;
+        left: 20px;
+        -webkit-text-stroke: 4.32px #FF26C2;
+        text-shadow:
+            0 0 5px#ff26c2,
+            0 0 15px #fc37ff,
+            0 0 20px #fc37ff,
+            0 0 25px #ffffff;
+    }
+
+    .bar_neon {
+        position: absolute;
+        z-index: -6;
+        top: 90px;
+        left: 20px;
+        color: transparent;
+        -webkit-text-stroke: 5.4px #ffffff52;
+        text-shadow:
+            0 0 5px#ff26c2,
+            0 0 15px #fc37ff,
+            0 0 20px #fc37ff,
+            0 0 25px #ffffff;
+    }
+
+    .header_left h3 {
+        font-family: 'Lumberjack';
+        width: 385px;
+        height: 28px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28.32px;
+        text-align: center;
+        color: #FFFFFF;
+        margin: 20px 20px 0 20px;
+    }
+
+    .upcoming_events {
+        width: 425px;
+        height: 2180px;
+    }
+
+    .events h2 {
+        font-family: 'Lumberjack';
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 42.48px;
+        text-align: center;
+        -webkit-text-stroke: 1.08px #FFFFFF;
+        color: #f31f74;
+        text-shadow:
+            0 0 5px#ff26c2,
+            0 0 15px #fc37ff,
+            0 0 20px #fc37ff,
+            0 0 25px #ffffff;
+    }
+
+    .neon_event {
+        position: absolute;
+        z-index: 1;
+        top: 43px;
+        -webkit-text-stroke: 2.16px #FFFFFF;
+        text-shadow:
+            0 0 5px#ff26c2,
+            0 0 15px #fc37ff,
+            0 0 20px #fc37ff,
+            0 0 25px #ffffff;
+    }
+
+    .event_neon {
+        position: absolute;
+        z-index: -1;
+        top: 43px;
+        -webkit-text-stroke: 3.24px #FB37FF;
+        text-shadow:
+            0 0 5px#ff26c2,
+            0 0 15px #fc37ff,
+            0 0 20px #fc37ff,
+            0 0 25px #ffffff;
+    }
+
+    .immediate {
+        position: absolute;
+        z-index: -5;
+        top: 43px;
+        -webkit-text-stroke: 4.32px #FF26C2;
+        text-shadow:
+            0 0 5px#ff26c2,
+            0 0 15px #fc37ff,
+            0 0 20px #fc37ff,
+            0 0 25px #ffffff;
+    }
+
+    .event {
+        position: absolute;
+        z-index: -6;
+        top: 43px;
+        color: transparent;
+        -webkit-text-stroke: 5.4px #ffffff52;
+        text-shadow:
+            0 0 5px#ff26c2,
+            0 0 15px #fc37ff,
+            0 0 20px #fc37ff,
+            0 0 25px #ffffff;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .motolog_evening {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 185px;
+    }
+
+    .motolog {
+        width: 315px;
+        height: 620px;
+        background-color: #0F1F2F;
+        border-radius: 20px;
+        margin: 15px 0;
+    }
+
+    .motolog img {
+        width: 315px;
+        height: 315px;
+    }
+
+    .time_aut {
+        width: 315px;
+        height: 620px;
+        background-color: #0F1F2F;
+        border-radius: 20px;
+        margin: 15px 0;
+
+    }
+
+    .time_aut img {
+        width: 315px;
+        height: 315px;
+    }
+
+    .title_in {
+        font-family: 'Lumberjack';
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23.6px;
+        text-align: center;
+        color: #D6258F;
+        margin-top: 20px;
+    }
+
+    .date {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        font-style: normal;
+        line-height: 21.09px;
+        text-align: end;
+        color: #243D55;
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+
+    .lorem {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18.75px;
+        color: #FFFFFF;
+        margin: 21px 5px 27px 15px;
+    }
+
+    .star {
+        display: none;
+    }
+
+    .bar_news {
+        width: 425px;
+        height: 990px;
+        background-color: #020F1C;
+    }
+
+    .neon_bars h2 {
+        font-family: 'Lumberjack';
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 42.48px;
+        text-align: center;
+        -webkit-text-stroke: 1.08px #FFFFFF;
+        color: #f31f74;
+        text-shadow:
+            0 0 5px#ff26c2,
+            0 0 15px #fc37ff,
+            0 0 20px #fc37ff,
+            0 0 25px #ffffff;
+    }
+
+    .bar_new {
+        position: absolute;
+        z-index: 1;
+        top: 40px;
+        -webkit-text-stroke: 2.16px #FFFFFF;
+        text-shadow:
+            0 0 5px#ff26c2,
+            0 0 15px #fc37ff,
+            0 0 20px #fc37ff,
+            0 0 25px #ffffff;
+    }
+
+    .new_bar {
+        position: absolute;
+        z-index: -1;
+        top: 40px;
+        -webkit-text-stroke: 3.24px #FB37FF;
+        text-shadow:
+            0 0 5px#ff26c2,
+            0 0 15px #fc37ff,
+            0 0 20px #fc37ff,
+            0 0 25px #ffffff;
+    }
+
+    .violet_bar {
+        position: absolute;
+        z-index: -5;
+        top: 40px;
+        -webkit-text-stroke: 4.32px #FF26C2;
+        text-shadow:
+            0 0 5px#ff26c2,
+            0 0 15px #fc37ff,
+            0 0 20px #fc37ff,
+            0 0 25px #ffffff;
+    }
+
+    .bar_violet {
+        position: absolute;
+        z-index: -6;
+        top: 40px;
+        color: transparent;
+        -webkit-text-stroke: 5.4px #ffffff52;
+        text-shadow:
+            0 0 5px#ff26c2,
+            0 0 15px #fc37ff,
+            0 0 20px #fc37ff,
+            0 0 25px #ffffff;
+    }
+
+    .menu_bar {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 0px;
+    }
+
+    .coctail img {
+        width: 385px;
+        height: 300px;
+        margin: 122px 0px 0 40px;
+    }
+
+    .cell {
+        width: 330px;
+        height: 47px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0px 0px 50px 40px;
+    }
+
+    .name_menu {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21.24px;
+        color: #D6258F;
+        width: 130px;
+    }
+
+    .name {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16.41px;
+        color: #fff;
+        width: 250px;
+        height: 63px;
+        margin: 20px 0 0px 0;
+    }
+
+    .span {
+        display: none;
+    }
+
+    .span_ {
+        display: none;
+    }
+
+    .name_price {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21.24px;
+        color: #D6258F;
+        width: 56px;
+        height: 28px;
+    }
+
+    .price {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21.24px;
+        color: #D6258F;
+        width: 56px;
+        height: 28px;
+        margin-top: 0px;
+    }
+
+    .btn {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21.24px;
+        color: #FFFFFF;
+        display: block;
+        width: 385px;
+        height: 51px;
+        transition: 0.4s;
+        border-radius: 20px;
+        background-color: #020F1C;
+        border: 2px solid#D6258F;
+        margin: 50px 0px 0 25px;
+    }
+
+    .btn:hover {
+        background: #020F1C;
+        width: 385px;
+        height: 51px;
+        box-shadow:
+            0 0 5px#ff26c2,
+            0 0 15px #fc37ff,
+            0 0 20px #fc37ff,
+            0 0 25px #ffffff;
+    }
+
+    .alcohol {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21.24px;
+        color: #FFFFFF;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .disco {
+        background: url("../images/Rec\ disco.png")center / cover no-repeat;
+        width: 425px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .disco_center {
+        font-family: 'Lumberjack';
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 42.48px;
+        color: #D6258F;
+    }
+
+    .every_friday {
+        font-family: 'Lumberjack';
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28.32px;
+        color: #fff;
+        margin-top: 20px;
+    }
+
+    .galery {
+        background: url("../images/bg\ 123456.png")center / cover no-repeat;
+        width: 425px;
+        height: 660px;
+    }
+
+    .galery_name h3 {
+        font-family: 'Lumberjack';
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 42.48px;
+        text-align: center;
+        -webkit-text-stroke: 1.08px #FFFFFF;
+        color: #f31f74;
+        text-shadow:
+            0 0 5px#ff26c2,
+            0 0 15px #fc37ff,
+            0 0 20px #fc37ff,
+            0 0 25px #ffffff;
+    }
+
+    .gall_neon {
+        position: absolute;
+        z-index: 1;
+        top: 55px;
+        left: 140px;
+        -webkit-text-stroke: 2.16px #FFFFFF;
+        text-shadow:
+            0 0 5px#ff26c2,
+            0 0 15px #fc37ff,
+            0 0 20px #fc37ff,
+            0 0 25px #ffffff;
+    }
+
+    .neon_gall {
+        position: absolute;
+        z-index: -1;
+        top: 55px;
+        left: 140px;
+        -webkit-text-stroke: 3.24px #FB37FF;
+        text-shadow:
+            0 0 5px#ff26c2,
+            0 0 15px #fc37ff,
+            0 0 20px #fc37ff,
+            0 0 25px #ffffff;
+    }
+
+    .gallary_neon {
+        position: absolute;
+        z-index: -5;
+        top: 55px;
+        left: 140px;
+        -webkit-text-stroke: 4.32px #FF26C2;
+        text-shadow:
+            0 0 5px#ff26c2,
+            0 0 15px #fc37ff,
+            0 0 20px #fc37ff,
+            0 0 25px #ffffff;
+    }
+
+    .neon_gallary {
+        position: absolute;
+        z-index: -6;
+        top: 55px;
+        left: 140px;
+        color: transparent;
+        -webkit-text-stroke: 5.4px #ffffff52;
+        text-shadow:
+            0 0 5px#ff26c2,
+            0 0 15px #fc37ff,
+            0 0 20px #fc37ff,
+            0 0 25px #ffffff;
+    }
+
+    .galery_photo {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .gallary_gall {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 118px 20px 0 -20px;
+        height: 490px;
+    }
+
+    .gallary_gall img {
+        width: 170px;
+        height: 150px;
+    }
+
+    .gall_gall {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 118px;
+
+    }
+
+    .gall_gall img {
+        width: 170px;
+        height: 150px;
+    }
+
+    .company {
+        width: 425px;
+        height: 746px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 20px 0;
+    }
+
+    .name_company {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-left: -40px;
+    }
+
+    .descript {
+        width: 448px;
+        height: 292px;
+        margin-right: 260px;
+    }
+
+    .about_our_company {
+        font-family: 'Lumberjack';
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 48px;
+        text-align: justify;
+        color: #D6258F;
+        width: 343px;
+        margin-bottom: 24px;
+    }
+
+    .welcome {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        width: 352px;
+        text-align: justify;
+        color: #777E90;
+    }
+
+    .painting img {
+        width: 343px;
+        height: 318px;
+    }
+
+    .our_production {
+        width: 425px;
+        height: 2030px;
+    }
+
+    .production h3 {
+        font-family: 'Lumberjack';
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 48px;
+        text-align: center;
+        width: 453px;
+        color: #D6258F;
+        margin-bottom: 24px;
+    }
+
+    .oil_refining {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 64px;
+        margin-left: 40px;
+    }
+
+    .oil h3 {
+        font-family: 'Lumberjack';
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 36.46px;
+        text-align: justify;
+        color: #D6258F;
+        width: 385px;
+        height: 80px;
+    }
+
+    .oil p {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: justify;
+        color: #777E90;
+        width: 343px;
+        height: 72px;
+        margin-top: 30px;
+    }
+
+    .oil_paint img {
+        width: 343px;
+        height: 318px;
+        margin-top: 32px;
+    }
+
+    .petrochemistry {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 64px;
+        margin-left: 40px;
+    }
+
+    .petrochemistry_name {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .petrochemistry_name h3 {
+        font-family: 'Lumberjack';
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 36.46px;
+        text-align: justify;
+        color: #D6258F;
+        width: 352px;
+        height: 72px;
+    }
+
+    .petrochemistry_name p {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: justify;
+        color: #777E90;
+        width: 343px;
+        height: 168px;
+        margin-top: 30px;
+    }
+
+    .petrochemistry_paint img {
+        width: 343px;
+        height: 318px;
+        margin-top: 32px;
+    }
+
+    .fertilizers {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 64px;
+        margin-left: 40px;
+    }
+
+    .fertilizers_name h3 {
+        font-family: 'Lumberjack';
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 36.46px;
+        text-align: justify;
+        color: #D6258F;
+        width: 352px;
+        height: 72px;
+    }
+
+    .fertilizers_name p {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: justify;
+        color: #777E90;
+        width: 352px;
+        height: 72px;
+        margin-top: 30px;
+    }
+
+    .fertilizers_paint img {
+        width: 343px;
+        height: 318px;
+        margin-top: 32px;
+    }
+
+    .central_asia {
+        width: 425px;
+        height: 530px;
+        margin-left: 40px;
+
+    }
+
+    .import h2 {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 16px;
+        text-align: justify;
+        color: #777E90;
+    }
+
+    .import h3 {
+        font-family: 'Lumberjack';
+        font-weight: 700;
+        font-size: 65px;
+        line-height: 60px;
+        text-align: justify;
+        color: #D6258F;
+        width: 300px;
+        height: 128px;
+        margin: 16px 0
+    }
+
+    .import p {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: justify;
+        color: #777E90;
+        width: 286px;
+        height: 120px;
+    }
+
+    .central_asia_paint {
+        margin-top: 32px;
+    }
+
+    .central_asia_paint img {
+        width: 343px;
+        height: 212px;
+    }
+
+    .map {
+        width: 425px;
+        height: 293px;
+        margin-bottom: 50px;
+        position: relative;
+    }
+
+    .map_photo {
+        width: 425px;
+        height: 293px;
+        margin-top: 50px;
+    }
+
+    .map_logo {
+        width: 24px;
+        height: 24px;
+        top: 265px;
+        left: 180px;
+    }
+
+    .ftr h2 {
+        font-family: 'Lumberjack';
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 42.48px;
+        text-align: justify;
+        color: #D6258F;
+        margin: 50px 0 30px 0;
+    }
+
+    .ftr p {
+        font-family: 'Lumberjack';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21.24px;
+        text-align: center;
+        color: #FFFFFF;
+        width: 285px;
+        margin: 14px 0;
+    }
+
+    footer img {
+        width: 425px;
+    }
+
+    .logo img {
+        width: 37px;
+        height: 37px;
+    }
+}

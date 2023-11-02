@@ -1,0 +1,935 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 67.5%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #09090A;
+    padding-right: 35px;
+}
+
+body {
+    background-color: #09090A;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu img {
+    width: 70px;
+    height: 70px;
+    margin: 10px 45px;
+}
+
+.menu_item {
+    font-family: 'Lumberjack';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23.6px;
+    color: #FFFFFF;
+    margin: 0 15px;
+}
+
+/* анимация нижней линии */
+a {
+    position: relative;
+    color: #D6258F;
+    cursor: pointer;
+    line-height: 1;
+    text-decoration: none;
+}
+
+a:after {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #D6258F;
+    content: "";
+    transition: width 0.3s ease-in-out;
+}
+
+a:hover:after,
+a:focus:after {
+    width: 100%;
+}
+
+/* burger menu */
+
+.burger_menu {
+    position: absolute;
+    visibility: visible;
+    top: -100%;
+}
+
+.header_bottom {
+    background: url("../images/bg.png")center / cover no-repeat;
+    width: 1920px;
+    height: 980px;
+}
+
+.header_left {
+    width: 50%;
+    height: 980px;
+    backdrop-filter: blur(10px);
+    background-color: #29262903;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    position: relative;
+}
+
+h1 {
+    width: 645px;
+    font-family: 'Lumberjack';
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 113.28px;
+    text-align: justify;
+    -webkit-text-stroke: 2.5px #FFFFFF;
+    color: #f31f74;
+    text-shadow:
+        0 0 5px#ff26c2,
+        0 0 15px #fc37ff,
+        0 0 20px #fc37ff,
+        0 0 25px #ffffff;
+}
+
+.neon {
+    position: absolute;
+    z-index: 1;
+    top: 296px;
+    -webkit-text-stroke: 3px #FFFFFF;
+    text-shadow:
+        0 0 5px#ff26c2,
+        0 0 15px #fc37ff,
+        0 0 20px #fc37ff,
+        0 0 25px #ffffff;
+}
+
+.neon_colifornia {
+    position: absolute;
+    z-index: -1;
+    top: 296px;
+    -webkit-text-stroke: 6px #FB37FF;
+    text-shadow:
+        0 0 5px#ff26c2,
+        0 0 15px #fc37ff,
+        0 0 20px #fc37ff,
+        0 0 25px #ffffff;
+}
+
+.neon_bar {
+    position: absolute;
+    z-index: -5;
+    top: 296px;
+    -webkit-text-stroke: 9px #FF26C2;
+    text-shadow:
+        0 0 5px#ff26c2,
+        0 0 15px #fc37ff,
+        0 0 20px #fc37ff,
+        0 0 25px #ffffff;
+}
+
+.bar_neon {
+    position: absolute;
+    z-index: -6;
+    top: 296px;
+    color: transparent;
+    -webkit-text-stroke: 15px #ffffff52;
+    text-shadow:
+        0 0 5px#ff26c2,
+        0 0 15px #fc37ff,
+        0 0 20px #fc37ff,
+        0 0 25px #ffffff;
+}
+
+.header_left h3 {
+    font-family: 'Lumberjack';
+    width: 520px;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56.64px;
+    text-align: justify;
+    color: #FFFFFF;
+    margin: 240px 130px 0 0;
+}
+
+span {
+    color: #D6258F;
+    font-family: 'Lumberjack';
+}
+
+/* main */
+
+.upcoming_events {
+    width: 1920px;
+    height: 1115px;
+}
+
+.events {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.events h2 {
+    font-family: 'Lumberjack';
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 75.52px;
+    text-align: center;
+    -webkit-text-stroke: 1.5px #FFFFFF;
+    color: #f31f74;
+    text-shadow:
+        0 0 5px#ff26c2,
+        0 0 15px #fc37ff,
+        0 0 20px #fc37ff,
+        0 0 25px #ffffff;
+}
+
+.neon_event {
+    position: absolute;
+    z-index: 1;
+    top: 140px;
+    -webkit-text-stroke: 3px #FFFFFF;
+    text-shadow:
+        0 0 5px#ff26c2,
+        0 0 15px #fc37ff,
+        0 0 20px #fc37ff,
+        0 0 25px #ffffff;
+}
+
+.event_neon {
+    position: absolute;
+    z-index: -1;
+    top: 140px;
+    -webkit-text-stroke: 6px #FB37FF;
+    text-shadow:
+        0 0 5px#ff26c2,
+        0 0 15px #fc37ff,
+        0 0 20px #fc37ff,
+        0 0 25px #ffffff;
+}
+
+.immediate {
+    position: absolute;
+    z-index: -5;
+    top: 140px;
+    -webkit-text-stroke: 9px #FF26C2;
+    text-shadow:
+        0 0 5px#ff26c2,
+        0 0 15px #fc37ff,
+        0 0 20px #fc37ff,
+        0 0 25px #ffffff;
+}
+
+.event {
+    position: absolute;
+    z-index: -6;
+    top: 140px;
+    color: transparent;
+    -webkit-text-stroke: 15px #ffffff52;
+    text-shadow:
+        0 0 5px#ff26c2,
+        0 0 15px #fc37ff,
+        0 0 20px #fc37ff,
+        0 0 25px #ffffff;
+}
+
+.motolog_evening {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    position: relative;
+    margin-top: 276px;
+}
+
+.arrow {
+    position: absolute;
+    left: -300px;
+    top: 19px;
+}
+
+.motolog {
+    width: 410px;
+    height: 700px;
+    background-color: #0F1F2F;
+    border-radius: 20px;
+}
+
+.time_aut {
+    width: 410px;
+    height: 700px;
+    background-color: #0F1F2F;
+    border-radius: 20px;
+
+}
+
+.title_in {
+    font-family: 'Lumberjack';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28.32px;
+    text-align: center;
+    color: #D6258F;
+    margin-top: 20px;
+}
+
+.date {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    font-style: normal;
+    line-height: normal;
+    text-align: end;
+    color: #243D55;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.lorem {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23.44px;
+    color: #FFFFFF;
+    margin: 21px 5px 27px 15px;
+}
+
+/* bar_news */
+
+.bar_news {
+    width: 1920px;
+    height: 1085px;
+    background-color: #020F1C;
+}
+
+.neon_bars {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.neon_bars h2 {
+    font-family: 'Lumberjack';
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 75.52px;
+    text-align: center;
+    -webkit-text-stroke: 1.5px #FFFFFF;
+    color: #f31f74;
+    text-shadow:
+        0 0 5px#ff26c2,
+        0 0 15px #fc37ff,
+        0 0 20px #fc37ff,
+        0 0 25px #ffffff;
+}
+
+.bar_new {
+    position: absolute;
+    z-index: 1;
+    top: 42px;
+    -webkit-text-stroke: 3px #FFFFFF;
+    text-shadow:
+        0 0 5px#ff26c2,
+        0 0 15px #fc37ff,
+        0 0 20px #fc37ff,
+        0 0 25px #ffffff;
+}
+
+.new_bar {
+    position: absolute;
+    z-index: -1;
+    top: 42px;
+    -webkit-text-stroke: 6px #FB37FF;
+    text-shadow:
+        0 0 5px#ff26c2,
+        0 0 15px #fc37ff,
+        0 0 20px #fc37ff,
+        0 0 25px #ffffff;
+}
+
+.violet_bar {
+    position: absolute;
+    z-index: -5;
+    top: 42px;
+    -webkit-text-stroke: 9px #FF26C2;
+    text-shadow:
+        0 0 5px#ff26c2,
+        0 0 15px #fc37ff,
+        0 0 20px #fc37ff,
+        0 0 25px #ffffff;
+}
+
+.bar_violet {
+    position: absolute;
+    z-index: -6;
+    top: 42px;
+    color: transparent;
+    -webkit-text-stroke: 15px #ffffff52;
+    text-shadow:
+        0 0 5px#ff26c2,
+        0 0 15px #fc37ff,
+        0 0 20px #fc37ff,
+        0 0 25px #ffffff;
+}
+
+/*  */
+
+.menu_bar {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 251px;
+}
+
+.cell {
+    width: 716px;
+    height: 69px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.name_menu {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28.32px;
+    color: #D6258F;
+    width: 169px;
+}
+
+.name {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21.09px;
+    color: #fff;
+    width: 300px;
+    height: 63px;
+    margin: 20px 0 0px 0;
+}
+
+.span {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21.09px;
+    color: #fff;
+    margin: 7px 28px 0 28px;
+    width: 435px;
+}
+
+.span_ {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21.09px;
+    color: #fff;
+    margin: 30px 28px 0 28px;
+    width: 435px;
+}
+
+.name_price {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28.32px;
+    color: #D6258F;
+    width: 56px;
+    height: 28px;
+}
+
+.price {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28.32px;
+    color: #D6258F;
+    width: 56px;
+    height: 28px;
+    margin-top: 20px;
+}
+
+.menu_bar {
+    position: relative;
+}
+
+.star {
+    position: absolute;
+    top: -142px;
+    right: 0;
+}
+
+.coctail {
+    position: relative;
+}
+
+/* button */
+.button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28.13px;
+    color: #FFFFFF;
+    display: block;
+    width: 1290px;
+    height: 68px;
+    transition: 0.4s;
+    border-radius: 20px;
+    background-color: #020F1C;
+    border: 2px solid#D6258F;
+    margin-top: 80px;
+}
+
+.btn:hover {
+    background: #020F1C;
+    width: 1290px;
+    height: 68px;
+    box-shadow:
+        0 0 5px#ff26c2,
+        0 0 15px #fc37ff,
+        0 0 20px #fc37ff,
+        0 0 25px #ffffff;
+}
+
+.alcohol {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28.13px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* disco */
+
+.disco {
+    background: url("../images/Rect.png")center / cover no-repeat;
+    width: 1920px;
+    height: 590px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.disco_center {
+    font-family: 'Lumberjack';
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56.64px;
+    color: #D6258F;
+}
+
+.every_friday {
+    font-family: 'Lumberjack';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42.48px;
+    color: #fff;
+    margin-top: 35px;
+}
+
+/* galery */
+
+.galery {
+    background: url("../images/bg2.png")center / cover no-repeat;
+    width: 1920px;
+    height: 1250px;
+}
+
+.galery_name {
+    position: relative;
+}
+
+.galery_name h3 {
+    font-family: 'Lumberjack';
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 75.52px;
+    text-align: center;
+    -webkit-text-stroke: 1.5px #FFFFFF;
+    color: #f31f74;
+    text-shadow:
+        0 0 5px#ff26c2,
+        0 0 15px #fc37ff,
+        0 0 20px #fc37ff,
+        0 0 25px #ffffff;
+}
+
+.gall_neon {
+    position: absolute;
+    z-index: 1;
+    top: 102px;
+    left: 844px;
+    -webkit-text-stroke: 3px #FFFFFF;
+    text-shadow:
+        0 0 5px#ff26c2,
+        0 0 15px #fc37ff,
+        0 0 20px #fc37ff,
+        0 0 25px #ffffff;
+}
+
+.neon_gall {
+    position: absolute;
+    z-index: -1;
+    top: 102px;
+    left: 844px;
+    -webkit-text-stroke: 6px #FB37FF;
+    text-shadow:
+        0 0 5px#ff26c2,
+        0 0 15px #fc37ff,
+        0 0 20px #fc37ff,
+        0 0 25px #ffffff;
+}
+
+.gallary_neon {
+    position: absolute;
+    z-index: -5;
+    top: 102px;
+    left: 844px;
+    -webkit-text-stroke: 9px #FF26C2;
+    text-shadow:
+        0 0 5px#ff26c2,
+        0 0 15px #fc37ff,
+        0 0 20px #fc37ff,
+        0 0 25px #ffffff;
+}
+
+.neon_gallary {
+    position: absolute;
+    z-index: -6;
+    top: 102px;
+    left: 844px;
+    color: transparent;
+    -webkit-text-stroke: 15px #ffffff52;
+    text-shadow:
+        0 0 5px#ff26c2,
+        0 0 15px #fc37ff,
+        0 0 20px #fc37ff,
+        0 0 25px #ffffff;
+}
+
+.galery_photo {
+    display: flex;
+    flex-direction: column;
+}
+
+.gallary_gall {
+    display: flex;
+    justify-content: space-between;
+    margin: 238px 0 40px 0;
+}
+
+.gall_gall {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* compony */
+.company {
+    width: 1920px;
+    height: 746px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name_company {
+    display: flex;
+    align-items: center;
+}
+
+.descript {
+    width: 425px;
+    height: 292px;
+    margin-right: 260px;
+}
+
+.about_our_company {
+    font-family: 'Lumberjack';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: justify;
+    color: #D6258F;
+    width: 200px;
+    margin-bottom: 24px;
+    -webkit-text-stroke: 0.02px #ffffff75;
+    text-shadow:
+        0 0 5px#ff26c2,
+        0 0 15px #fc37ff,
+        0 0 20px #fc37ff,
+        0 0 25px #ffffff;
+}
+
+.welcome {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: justify;
+    color: #777E90;
+}
+
+/* our_production */
+.our_production {
+    width: 1920px;
+    height: 1513px;
+}
+
+.production {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.production h3 {
+    font-family: 'Lumberjack';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    width: 453px;
+    color: #D6258F;
+    margin-bottom: 24px;
+    -webkit-text-stroke: 0.02px #ffffff75;
+    text-shadow:
+        0 0 5px#ff26c2,
+        0 0 15px #fc37ff,
+        0 0 20px #fc37ff,
+        0 0 25px #ffffff;
+}
+
+.oil_refining {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 64px;
+}
+
+.oil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.oil h3 {
+    font-family: 'Lumberjack';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: justify;
+    color: #D6258F;
+    width: 385px;
+    height: 80px;
+}
+
+.oil p {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: justify;
+    color: #777E90;
+    width: 352px;
+    height: 72px;
+    margin-top: 30px;
+}
+
+.petrochemistry {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 64px;
+}
+
+.petrochemistry_name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.petrochemistry_name h3 {
+    font-family: 'Lumberjack';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: justify;
+    color: #D6258F;
+    width: 352px;
+    height: 80px;
+}
+
+.petrochemistry_name p {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: justify;
+    color: #777E90;
+    width: 352px;
+    height: 72px;
+    margin-top: 30px;
+}
+
+.fertilizers {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 64px;
+}
+
+.fertilizers_name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fertilizers_name h3 {
+    font-family: 'Lumberjack';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: justify;
+    color: #D6258F;
+    width: 352px;
+    height: 80px;
+}
+
+.fertilizers_name p {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: justify;
+    color: #777E90;
+    width: 352px;
+    height: 72px;
+    margin-top: 30px;
+}
+
+/* central_asia */
+
+.central_asia {
+    width: 1920px;
+    height: 950px;
+}
+
+.import h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: justify;
+    color: #777E90;
+}
+
+.import h3 {
+    font-family: 'Lumberjack';
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 64px;
+    text-align: justify;
+    color: #D6258F;
+    width: 300px;
+    height: 128px;
+    margin: 16px 0;
+    -webkit-text-stroke: 0.02px #ffffff75;
+    text-shadow:
+        0 0 5px#ff26c2,
+        0 0 15px #fc37ff,
+        0 0 20px #fc37ff,
+        0 0 25px #ffffff;
+}
+
+.import p {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: justify;
+    color: #777E90;
+    width: 548px;
+    height: 72px;
+}
+
+.central_asia_paint {
+    margin-top: 52px;
+}
+
+.central_asia_paint img {
+    width: 1290px;
+}
+
+.map {
+    width: 1920px;
+    height: 600px;
+    position: relative;
+}
+
+.map_logo {
+    position: absolute;
+    top: 482px;
+    left: 782px;
+}
+
+/* footer */
+
+.footer {
+    width: 1920;
+    height: 443px;
+}
+
+.ftr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ftr h2 {
+    font-family: 'Lumberjack';
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56.64px;
+    text-align: justify;
+    color: #D6258F;
+    margin: 50px 0 30px 0;
+}
+
+.ftr p {
+    font-family: 'Lumberjack';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28.32px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 285px;
+    margin: 14px 0;
+}
+
+footer img {
+    margin-top: 26px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
